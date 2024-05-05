@@ -2,16 +2,18 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th> First Name </th>
-            <th> Last Name </th>
-            <th> Email Id</th>
+            <th> Employee Id </th>
+            <th> Employee First Name </th>
+            <th> Employee Last Name</th>
+            <th> Employee email Id</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let employee of employees" >
-            <td> {{ employee.firstName }}</td>
+            <td> {{ employee.id }}</td>
+            <td> {{ employee.firstName}}</td>
             <td> {{ employee.lastName }}</td>
-            <td> {{ employee.emailId }}</td>
+            <td> {{ employee.emailId}}</td>
         
         </tr>
     </tbody>
